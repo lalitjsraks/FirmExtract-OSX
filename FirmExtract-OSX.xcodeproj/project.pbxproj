@@ -12,6 +12,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CF56067712BAEF1C00E88DEF /* iPhone2,1_4.2.1.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF56067412BAEF1C00E88DEF /* iPhone2,1_4.2.1.plist */; };
+		CF56067812BAEF1C00E88DEF /* iPod2,1_4.2.1.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF56067512BAEF1C00E88DEF /* iPod2,1_4.2.1.plist */; };
+		CF56067912BAEF1C00E88DEF /* iPod3,1_4.2.1.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF56067612BAEF1C00E88DEF /* iPod3,1_4.2.1.plist */; };
 		CF7A3DB0129857D6005D1960 /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3D26129857D6005D1960 /* file.c */; };
 		CF7A3DB2129857D6005D1960 /* ipsw.c in Sources */ = {isa = PBXBuildFile; fileRef = CF7A3D29129857D6005D1960 /* ipsw.c */; };
 		CF7A3DB3129857D6005D1960 /* ipsw.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7A3D2B129857D6005D1960 /* ipsw.png */; };
@@ -171,6 +174,9 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* FirmExtract_OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FirmExtract_OSX-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* FirmExtract-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirmExtract-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF56067412BAEF1C00E88DEF /* iPhone2,1_4.2.1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "iPhone2,1_4.2.1.plist"; path = "data/iPhone2,1_4.2.1.plist"; sourceTree = "<group>"; };
+		CF56067512BAEF1C00E88DEF /* iPod2,1_4.2.1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "iPod2,1_4.2.1.plist"; path = "data/iPod2,1_4.2.1.plist"; sourceTree = "<group>"; };
+		CF56067612BAEF1C00E88DEF /* iPod3,1_4.2.1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "iPod3,1_4.2.1.plist"; path = "data/iPod3,1_4.2.1.plist"; sourceTree = "<group>"; };
 		CF7A3D26129857D6005D1960 /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
 		CF7A3D27129857D6005D1960 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
 		CF7A3D29129857D6005D1960 /* ipsw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ipsw.c; sourceTree = "<group>"; };
@@ -384,6 +390,9 @@
 		29B97314FDCFA39411CA2CEA /* FirmExtract-OSX */ = {
 			isa = PBXGroup;
 			children = (
+				CF56067412BAEF1C00E88DEF /* iPhone2,1_4.2.1.plist */,
+				CF56067512BAEF1C00E88DEF /* iPod2,1_4.2.1.plist */,
+				CF56067612BAEF1C00E88DEF /* iPod3,1_4.2.1.plist */,
 				CFB860F912B034AD00C47E41 /* libplist.1.1.3.dylib */,
 				CFA4D74B12AC57BF0066D356 /* libz.1.2.3.dylib */,
 				CF82B127129DA98D009906DA /* data */,
@@ -728,6 +737,9 @@
 				CFB8A8AD129EB417008A442C /* iPhone3,1_4.2.1.plist in Resources */,
 				CFA48796129EDC8200717ECB /* iPhone1,2_4.2.1.plist in Resources */,
 				CFA4D73F12AC56F70066D356 /* iPad1,1_3.2.2.plist in Resources */,
+				CF56067712BAEF1C00E88DEF /* iPhone2,1_4.2.1.plist in Resources */,
+				CF56067812BAEF1C00E88DEF /* iPod2,1_4.2.1.plist in Resources */,
+				CF56067912BAEF1C00E88DEF /* iPod3,1_4.2.1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,11 +858,11 @@
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-lcrypto",
-					"-lssl",
-					"-lz",
 					"-lzip",
-					"-lpng15",
+					"-lz",
+					"-lplist",
+					"-lssl",
+					"-lcrypto",
 				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -871,10 +883,16 @@
 				);
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-lplist";
+				OTHER_LDFLAGS = (
+					"-lzip",
+					"-lz",
+					"-lplist",
+					"-lssl",
+					"-lcrypto",
+				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
-				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
 			};
 			name = Release;
 		};

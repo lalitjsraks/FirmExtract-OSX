@@ -25,8 +25,10 @@ int plat=PLATFORM_CODE_IPOD;
 	NSOpenPanel *choose=[NSOpenPanel openPanel];
 	[choose setCanChooseFiles:YES];
 	[choose setCanChooseDirectories:NO];
+	//NSArray *types=[NSArray arrayWithObject:@"ipsw"];
+	//[choose setAllowedFileTypes:types];
 	[choose setTitle:@"Browse for IPSW..."];
-	if ([choose runModalForDirectory:nil file:nil] == NSOKButton)
+	if ([choose runModalForTypes:[NSArray arrayWithObject:@"ipsw"]] == NSOKButton)
 	{
 		NSArray *f=[choose filenames];
 		ipsw_fname=[f objectAtIndex:0];
